@@ -2,7 +2,7 @@
   "mappings": [
     "/content/arb-eds/:/",
     "/content/arb-eds/configuration:/.helix/config.json",
-    "/content/arb-eds/api/placeholders:/api/placeholders.json",
+    "/content/arb-eds/au/api/placeholders:/au/api/placeholders.json",
     "/content/arb-eds/placeholders:/placeholders.json",
     "/content/arb-eds/metadata:/metadata.json",
     "/content/arb-eds/headers:/.helix/headers.json",
