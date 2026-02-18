@@ -1,0 +1,136 @@
+# Sitemap
+Sitemap: https://www.arb.com.au/sitemap.xml
+
+# =========================================================
+# Default Rules
+# =========================================================
+User-agent: *
+Crawl-delay: 1
+
+# ---------------------------------------------------------
+# Allow Frontend Assets
+# ---------------------------------------------------------
+Allow: /etc.clientlibs/
+Allow: /media/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /content/dam/*.jpg$
+Allow: /content/dam/*.jpeg$
+Allow: /content/dam/*.png$
+Allow: /content/dam/*.webp$
+Allow: /content/dam/*.gif$
+Allow: /content/dam/*.svg$
+
+# ---------------------------------------------------------
+# Disallow System & Internal Paths
+# ---------------------------------------------------------
+Disallow: /system/
+Disallow: /libs/
+Disallow: /apps/
+Disallow: /crx/
+Disallow: /bin/
+Disallow: /mnt/
+Disallow: /oak:index/
+Disallow: /etc/
+Disallow: /home/
+Disallow: /var/
+
+# ---------------------------------------------------------
+# Disallow Author UI
+# ---------------------------------------------------------
+Disallow: /editor.html/
+
+# ---------------------------------------------------------
+# Disallow API Endpoints
+# ---------------------------------------------------------
+Disallow: /graphql/
+Disallow: /content/_cq_graphql/
+
+# ---------------------------------------------------------
+# Disallow Backend & Admin
+# ---------------------------------------------------------
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /app/
+Disallow: /dev/
+Disallow: /lib/
+Disallow: /pkginfo/
+Disallow: /vendor/
+Disallow: /update/
+Disallow: /setup/
+Disallow: /report/
+
+# ---------------------------------------------------------
+# Disallow Transactional & Customer Areas
+# ---------------------------------------------------------
+Disallow: /checkout/
+Disallow: /customer/
+Disallow: /wishlist/
+Disallow: /review/
+Disallow: /sendfriend/
+Disallow: /newsletter/
+Disallow: /cart/
+Disallow: /account/
+
+# ---------------------------------------------------------
+# Disallow URL Parameters (Duplicate Content)
+# ---------------------------------------------------------
+Disallow: /*?q=
+Disallow: /*?dir=
+Disallow: /*?order=
+Disallow: /*?mode=
+Disallow: /*?price=
+Disallow: /*?color=
+Disallow: /*?size=
+Disallow: /*?brand=
+Disallow: /*?___store=
+Disallow: /*?___from_store=
+Disallow: /*?SID=
+Disallow: /*?utm_
+Disallow: /*?gclid=
+Disallow: /*&utm_
+Disallow: /*&gclid=
+
+# ---------------------------------------------------------
+# Disallow System Files
+# ---------------------------------------------------------
+Disallow: /cron.php
+Disallow: /error_log
+Disallow: /index.php/
+Disallow: /*.php$
+
+# =========================================================
+# Image Bot
+# =========================================================
+User-agent: Googlebot-Image
+Allow: /media/
+Allow: /content/dam/
+
+# =========================================================
+# Block Low-Value Crawlers
+# =========================================================
+
+Disallow: /blog/wp-content/upgrade/
+Disallow: /blog/wp-admin/
+Disallow: /blog/wp-includes/
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
